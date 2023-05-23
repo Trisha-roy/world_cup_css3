@@ -14,11 +14,14 @@
             margin-right: 140px;
             margin-top: 50px;
             border-radius: 30px;
-            background: url(./assests/Banner-Image.png);
-           
-            width: 581px;
-height: 613px;
-
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+             
+            
+        }
+        .image{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
         }
         .img-text{
             color: #FFFFFF;
@@ -35,23 +38,31 @@ height: 613px;
         button{
             background-color: #DD0000;
             width: 187px;
-height: 56px;
-margin-left: 244px;
-color: white;
+            height: 56px;
+            margin-left: 244px;
+            color: white;
+              }
+        img{
+            width: 581px;
+            height: 613px;
+            float: right;
+           
         }
-        
     </style>
 </head>
 <body>
     <main>
         <section class="container">
            
-                <div>
-                    <h1 class="img-text">The Greatest Show On The Earth</h1>
+                <div class="Image">
+                    <h1 class="img-text">The Greatest Show <br>On The Earth</h1>
                 
-                    <p class="img-text2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p class="img-text2">Contrary to popular belief, Lorem Ipsum is not simply random text.<br> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 
                 <button class="watch-live" type="submit">Watch Live  ></button>
+               <div>
+                <img src="./assests/Banner-Image.png" alt="">
+               </div>
             </div>
         </section>
     </main>
